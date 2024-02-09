@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgba(250, 240, 228, 0.767);
+
+}
+
+.bigContainer {
+    width: 100vw;
+    height: 100vh;
+}
+.heading {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: olive;
+ padding: 20px;
+}
+.heading h1 { 
+    font-size: 40px;
+    color: #fff ;
+}
+.queContainer {
+    background: aquamarine;
+    width: 100vw;
+    text-align: center;
+    margin: 30px auto;
+    padding: 30px;
+    /* border-radius: 8px; */
+    
+
+}
+.queContainer h2 {
+    font-size: 25px;
+}
+.time {
+    background: orange;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.time span {
+    font-size: 20px;
+}
+.optionContainer {
+    /* background: red; */
+    width: fit-content;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.optionContainer .option {
+    font-size: 25px;
+    background: lightcoral;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px 100px;
+    cursor: pointer;
+    text-align: center;
+}
+.hint {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.hint i {
+    color: #000;
+    font-size: 50px;
+    cursor: pointer;
+}
+.hint button {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    /* border: 1px solid black; */
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.ans {
+    background-color: blueviolet;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 20px auto;
+    display: none;
+}
+.ans h3 {
+    font-size: 20px;
+    color: #fff;
+}
+.noOfQue {
+    background: rgb(76, 129, 46);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noOfQue p {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.scoreContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    position: absolute;
+    padding: 80px;
+    right: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .3s;
+
+}
+.scoreContainer.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.scoreContainer .score {
+    background: #fff;
+    padding: 10px 25px;
+    width: 80%;
+    height: fit-content;
+    border-radius: 20px;
+    border: 5px solid black;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scoreContainer .score:last-child {
+    background-color: orange;
+}
+.resumeBigContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.616);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.resumeContainer {
+    background-color: rgb(85, 120, 185);
+    width:fit-content;
+    padding: 0 40px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.resumeContainer h2 {
+    font-size: 30px;
+    padding-top: 20px;
+    color: #000;
+}
+.resumeContainer .icon i {
+    font-size: 30px;
+    color: #fff;
+    margin:  20px;
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    body {
+        background-color: rgba(250, 240, 228, 0.767);
+
+    }
+    .heading {
+        background: olive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+       }
+       .heading h1 { 
+           font-size: 35px;
+           color: #fff ;
+       }
+       .queContainer {
+           background: aquamarine;
+           margin:20px auto;
+           padding:  20px;
+           text-align: center;
+           
+       
+       }
+       .queContainer h2 {
+           font-size: 15px;
+       }
+       .time {
+           background: orange;
+           width: fit-content;
+           padding: 7px 15px;
+           border-radius: 8px;
+           margin: 0 auto;
+       }
+       .time span {
+           font-size: 15px;
+       }
+       .optionContainer {
+           /* background: red; */
+           width: fit-content;
+           margin: 20px auto;
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           grid-gap: 10px;
+       }
+       .optionContainer .option {
+           font-size: 15px;
+           background: lightcoral;
+           padding: 7px 15px;
+           border-radius: 8px;
+           margin: 10px 20px;
+           cursor: pointer;
+       }
+       .hint button {
+        background: #fff;
+        padding: 5px 13px;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+    .ans h3 {
+        font-size: 15px;
+        color: #fff;
+    }
+    .scoreContainer {
+        width: 100vw;
+        height: 100vh;
+        background-color: aquamarine;
+        position: absolute;
+        padding: 30px 0 70px 0;
+        right: 0;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .3s;
+    
+    }
+    .scoreContainer.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .scoreContainer .score {
+        background: #fff;
+        padding: 7px 20px;
+        width: 60%;
+        height: fit-content;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .scoreContainer .score h2 {
+        font-size: 15px;
+    }
+    .noOfQue {
+        background: rgb(76, 129, 46);
+        width: fit-content;
+        padding: 7px 15px;
+        border-radius: 8px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .noOfQue p {
+        font-size: 15px;
+        color: #fff;
+        letter-spacing: 3px;
+    }
+}
+
+.canBeUsed{
+
+    text-decoration: none;
+    pointer-events: auto;
+    background-color: black;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.cantBeUsed{
+    
+        text-decoration: line-through;
+        pointer-events: none;
+        background-color: red;
+        color: red;
+        border: 1px solid red;
+}
